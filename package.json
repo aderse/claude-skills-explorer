@@ -1,0 +1,50 @@
+{
+  "name": "claude-skills-explorer",
+  "displayName": "Claude Skills",
+  "description": "Sidebar listing of your personal & project Claude Code skills, with search.",
+  "version": "0.5.0",
+  "publisher": "aderse",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "claudeSkillsExplorer",
+          "title": "Claude Skills",
+          "icon": "icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "claudeSkillsExplorer": [
+        {
+          "id": "claudeSkillsExplorer.skillsView",
+          "name": "Skills",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "claudeSkillsExplorer.refresh",
+        "title": "Refresh Claude Skills",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "claudeSkillsExplorer.refresh",
+          "when": "view == claudeSkillsExplorer.skillsView",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
