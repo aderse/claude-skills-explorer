@@ -1,8 +1,8 @@
-# Claude Skills
+# Claude Skills & Commands
 
-A VS Code sidebar that lists your Claude Code skills with a search box.
+A VS Code sidebar that lists your Claude Code skills and commands with a search box.
 
-Adds a star icon to the activity bar. Click it to see every skill from:
+Adds a briefcase icon to the activity bar. Click it to see every skill and command from:
 
 - **Global** — `~/.claude/skills/*/SKILL.md`
 - **Project** — `<workspace>/.claude/skills/*/SKILL.md`
@@ -16,7 +16,7 @@ shows the skills you created or added.
 ## Install
 
 ```
-code --install-extension claude-skills-explorer-0.1.0.vsix
+code --install-extension claude-skills-explorer-0.5.0.vsix
 ```
 
 Or in VS Code: **Extensions** panel → **⋯** → **Install from VSIX…**
